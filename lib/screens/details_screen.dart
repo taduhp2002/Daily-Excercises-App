@@ -40,27 +40,27 @@ class DetailsScreen extends StatelessWidget {
                           .headlineMedium
                           ?.copyWith(fontWeight: FontWeight.w900),
                     ),
-                    const SizedBox(height: 15),
+                    const SizedBox(height: 10),
                     const Text(
                       "3-10 MIN Course",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                    const SizedBox(height: 15),
+                    const SizedBox(height: 10),
                     SizedBox(
-                      width: size.width * .7, // it just take 60% of total width
+                      width: size.width * .6, // it just take 60% of total width
                       child: const Text(
                         "Live happier and healthier by learning the fundamentals of meditation and mindfulness",
                       ),
                     ),
-                    const SizedBox(height: 15),
+                    
                     SizedBox(
                       width: size.width * .5, // it just take the 50% width
                       child: const SearchBar(),
                     ),
-                    const SizedBox(height: 30),
+                   
                     Wrap(
                       spacing: 20,
-                      runSpacing: 30,
+                      runSpacing: 20,
                       children: <Widget>[
                         SeassionCard(
                           seassionNum: 1,
@@ -186,7 +186,7 @@ class SeassionCard extends StatelessWidget {
             child: InkWell(
               onTap: press(),
               child: Padding(
-                padding: const EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Row(
                   children: <Widget>[
                     Container(
